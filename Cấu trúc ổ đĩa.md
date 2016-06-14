@@ -1,5 +1,6 @@
 ###I. Cấu tạo ổ HDD
 Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, vỏ đĩa cứng.
+![disk](/images/disk1.gif)
 ####1. Cụm đĩa
 - 1.1 Đĩa từ :
 	- Đĩa bằng nhô, thủy tinh, hoặc sứ có chế độ hoạt động tương đối nặng.
@@ -13,11 +14,13 @@ Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, 
 	- Yếu tố xác định chất lượng ổ cứng là tốc độ mà đĩa từ lướt qua dưới đầu đọc/ghi. Đĩa từ lướt qua đầu từ với tốc độ khá cao ( ít nhất là 3600 vòng/phút)
 	- Mô tơ trục (spindle mô tơ) có chức năng làm quay các đĩa từ.
 	- Mô tở trục là loại không có chổi quét, chiều cao thấp, dùng điện 1 chiều, tương tự mô tơ trong ổ đĩa mềm.
+	
 ####2. Cụm đầu đọc
 - 2.1 Đầu đọc/ghi (Head)
 	- Cấu tạo gồm lõi ferit và cuộn dây ( giống như nam châm điện )
 	- Đầu đọc trong đĩa cứng đọc dữ liệu dưới dạng từ hóa trên bề mặt từ hoặc từ hóa lên các mặt đĩa khi ghi dữ liệu.
 	- Số đầu đọc ghi luôn bằng số mặt hoạt động được của các đĩa từ.
+	
 ####3. Cụm mạch điện
 	- Mạch điều khiển : Có nhiệm vụ điều khiển động cơ đồng trục, điều khiển sự di chuyển của cần di chuyển đầu đọc để đảm bảo đến đúng vị trí trên bề mặt đĩa.
 	- Mạch xử lý dữ liệu : dùng để xử lý những dữ liệu đọc/ghi của ổ đĩa cứng.
@@ -25,6 +28,7 @@ Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, 
 	- Đầu cắm nguồn cung cấp điện cho ổ đĩa cứng.
 	- Đầu kết nối giao tiếp với máy tính.
 	- Các cầu nối (jumper) : lựa chọn chế độ làm việc của ổ đĩa cứng (SATA 150 hoặc SATA 300) hay thứ tự trên các kênh trên giao tiếp IDE (master hoặc slave hoặc tự lựa chọn ), lựa chọn các thông số làm việc khác.
+	
 ####4. Vỏ đĩa cứng
 	- Chứa các linh kiện gắn trên nó, phần nắp đậy lại các bảo vệ linh kiện bên trong.
 	- Vỏ đĩa cứng nhằm định vị các linh kiện, chịu đựng va chạm (ở mức thấp) để bảo vệ ổ đĩa cứng, không cho bụi vào trong ổ đĩa cứng.
@@ -32,13 +36,17 @@ Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, 
 	
 ###II. Cấu trúc dữ liệu
 
+![disk](/images/disk2.gif)
+
 ####1. Track - Rãnh từ
 	- Các vòng tròn đồng tâm trên mặt đĩa dùng để xác định các vùng lưu trũ dữ liệu riêng biệt trên mặt đĩa.
 	- Mặc định, các track không cố định, chúng sẽ thay đổi vị trí khi được định dạng ở cấp thấp (low format) nhằm tái cấu trúc cho phù hợp khi đĩa bị hư hỏng (bad block) do xuống cấp của phần cơ.
 	- Tập hợp các track cùng bán kính của mặt đĩa khác nhau để tạo thành các trụ (cylinder), có 1024 cylinder ( từ 0-1023 ). Mỗi ổ cứng sẽ có nhiều cylinder vì có nhiều đĩa từ khác nhau.
+	
 ####2. Sector - Cung từ
 	- Mỗi track được chia thành các đường hướng tâm tạo thành các sector (cung từ), Sector là đơn vị chứa dữ liệu nhỏ nhất, dung lượng 512 byte.
 	- Số sector trên các track từ phần rìa đĩa đên tâm đĩa là khác nhau, các ổ cứng đều chia ra 10 vùng, mỗi vùng có tỷ số sector/track bằng nhau.
+	
 ####3. Cluster - Liên cung
 	- Một đơn vị lưu trữ 1 hoặc nhiều sector.
 	- Khi lưu dữ liệu vào ổ cứng, các dữ liệu được ghi vào hàng chục, hàng trăm cluster liền kề hoặc không liền kề nhau. Nếu không có sẵn có cluster liền nhau, HĐH sẽ tìm kiếm cluster còn trống ở gần và ghi tiếp dữ liệu lên đĩa.
