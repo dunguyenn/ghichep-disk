@@ -2,21 +2,21 @@
 Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, vỏ đĩa cứng.
 ![disk](/images/disk1.gif)
 ####1. Cụm đĩa
-- 1.1 *Đĩa từ* :
+- 1.1 **Đĩa từ** :
 	- Đĩa bằng nhô, thủy tinh, hoặc sứ có chế độ hoạt động tương đối nặng.
 	- Có khả năng lưu trữ tốt, an toàn, không bị "nhão" (nhả từ)
 	- Đĩa được phủ vật liệu từ ở cả 2 mặt và bao bọc bằng lớp vỏ bảo vệ.
 	
-- 1.2 Trục quay
+- 1.2 **Trục quay**
 	- Là bộ phận dịch chuyển đầu từ.
     - Nhiều loại đĩa cứng sử dụng mô tơ cuộn dây di động (voice coil motor) hay gọi là mô tơ cuộn dây quay (rotary coil) hoặc servo để điều khiển chuyển động của đầu từ.
-- 1.3 Động cơ (Motor trục quay)
+- 1.3 **Động cơ (Motor trục quay)**
 	- Yếu tố xác định chất lượng ổ cứng là tốc độ mà đĩa từ lướt qua dưới đầu đọc/ghi. Đĩa từ lướt qua đầu từ với tốc độ khá cao ( ít nhất là 3600 vòng/phút)
 	- Mô tơ trục (spindle mô tơ) có chức năng làm quay các đĩa từ.
 	- Mô tở trục là loại không có chổi quét, chiều cao thấp, dùng điện 1 chiều, tương tự mô tơ trong ổ đĩa mềm.
 	
 ####2. Cụm đầu đọc
-- 2.1 Đầu đọc/ghi (Head)
+- 2.1 **Đầu đọc/ghi (Head)**
 	- Cấu tạo gồm lõi ferit và cuộn dây ( giống như nam châm điện )
 	- Đầu đọc trong đĩa cứng đọc dữ liệu dưới dạng từ hóa trên bề mặt từ hoặc từ hóa lên các mặt đĩa khi ghi dữ liệu.
 	- Số đầu đọc ghi luôn bằng số mặt hoạt động được của các đĩa từ.
@@ -24,7 +24,9 @@ Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, 
 ####3. Cụm mạch điện
 
 	- Mạch điều khiển : Có nhiệm vụ điều khiển động cơ đồng trục, điều khiển sự di chuyển của cần di chuyển đầu đọc để đảm bảo đến đúng vị trí trên bề mặt đĩa.
+	
 	- Mạch xử lý dữ liệu : dùng để xử lý những dữ liệu đọc/ghi của ổ đĩa cứng.
+	
 	- Bộ nhớ đệm : nơi tạm lưu dữ liệu trong quá trình đọc/ghi dữ liệu. Dữ liệu trên bộ nhớ đệm sẽ mất đi khi ổ đĩa cứng ngừng được cấp điện.
 	- Đầu cắm nguồn cung cấp điện cho ổ đĩa cứng.
 	- Đầu kết nối giao tiếp với máy tính.
@@ -40,7 +42,6 @@ Gồm 4 thành phần : Cụm đĩa, cụm đầu đọc, cụm mạch điện, 
 ![disk](/images/disk2.jpg)
 
 ####1. Track - Rãnh từ
-
 	- Các vòng tròn đồng tâm trên mặt đĩa dùng để xác định các vùng lưu trũ dữ liệu riêng biệt trên mặt đĩa.
 	- Mặc định, các track không cố định, chúng sẽ thay đổi vị trí khi được định dạng ở cấp thấp (low format) nhằm tái cấu trúc cho phù hợp khi đĩa bị hư hỏng (bad block) do xuống cấp của phần cơ.
 	- Tập hợp các track cùng bán kính của mặt đĩa khác nhau để tạo thành các trụ (cylinder), có 1024 cylinder ( từ 0-1023 ). Mỗi ổ cứng sẽ có nhiều cylinder vì có nhiều đĩa từ khác nhau.
