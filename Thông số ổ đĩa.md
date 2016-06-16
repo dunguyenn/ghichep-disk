@@ -26,6 +26,7 @@ Tốc độ xử lý càng nhanh => tốc độ hoạt động ứng dụng càn
 <ul>
 <li>Chuẩn SATA (Serial Avanced Technology Attachment), hay đơn giản được gọi là SATA – là một chuẩn ổ đĩa cứng được tạo nhằm mục đích thay thế cho giao diện IDE, cho phép truyền tải theo chế độ nối tiếp.</li>
 Các thông số theo version của chuẩn SATA
+
 |SATA Version | Bandwith | Speed|
 |--------------|-------|------|
 | SATA 3.0 | 6Gb/s | 600MB/s |
