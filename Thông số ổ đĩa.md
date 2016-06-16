@@ -12,9 +12,10 @@
  đầu thực hiện thao tác.
  
 ####IOPS : Input/Output Operations Per Second - số thao tác đọc ghi trên ổ cứng trong 1s. 
-Trong điện toán đám mây, nơi mà tài nguyên phần cứng được chia sẻ với nhiều người, IOPS quyết định độ nhanh và nhạy của 
+- Trong điện toán đám mây, nơi mà tài nguyên phần cứng được chia sẻ với nhiều người, IOPS quyết định độ nhanh và nhạy của 
 volume do bản chất IOPS càng cao thì càng nhiều thao tác có thể thực hiện được đồng thời 1 lúc.
-Tốc độ xử lý càng nhanh => tốc độ hoạt động ứng dụng càng cao
+
+- Tốc độ xử lý càng nhanh => tốc độ hoạt động ứng dụng càng cao
 
 ###Chuẩn ổ đĩa cứng
 ####1. Chuẩn IDE (Parallel ATA hoặc PATA)
