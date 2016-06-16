@@ -17,7 +17,7 @@ volume do bản chất IOPS càng cao thì càng nhiều thao tác có thể th�
 
 - Tốc độ xử lý càng nhanh => tốc độ hoạt động ứng dụng càng cao
 
-###Chuẩn ổ đĩa cứng
+###II. Chuẩn ổ đĩa cứng
 ####1. Chuẩn IDE (Parallel ATA hoặc PATA)
 <ul>
 <li>IDE là một chuẩn giao diện, được dùng trực tiếp bởi bo mạch chủ (BMC) của máy tính để truyền tải thông tin qua lại với ổ đĩa cứng hay ổ đĩa quang.</li>
