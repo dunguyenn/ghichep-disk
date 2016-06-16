@@ -4,7 +4,7 @@
 ####1. Throughput
 - Chỉ ra tốc độ transfer data (MB/s hoặc GB/s). LÀ thông số khi check perfomance của ổ cứng bằng câu lệnh "**dd**" trong linux
 
-![disk](disk3.png)
+![disk](/images/disk3.png)
 
 ####2. Latency (ms)
 - Thời gian ổ cứng bắt đầu thực hiện 1 data transfer. TRong HDD vật lý truyền thống, latency bao gồm seek time ( thời gian đầu đọc tìm ra vị trí data)
