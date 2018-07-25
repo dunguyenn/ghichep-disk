@@ -5,6 +5,12 @@ Ba thông số cơ bản để đánh giá hiệu năng ổ cứng: throughput, 
 #### 1. Throughput
 - Chỉ ra tốc độ transfer data (MB/s hoặc GB/s). LÀ thông số khi check perfomance của ổ cứng bằng câu lệnh "**dd**" trong linux
 
+- Câu lệnh để kiểm tra thougput
+
+```
+dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync
+```
+
 ![disk](/images/disk3.png)
 
 #### 2. Latency (ms)
@@ -27,7 +33,9 @@ volume do bản chất IOPS càng cao thì càng nhiều thao tác có thể th�
 <li>IDE là một chuẩn giao diện, được dùng trực tiếp bởi bo mạch chủ (BMC) của máy tính để truyền tải thông tin qua lại với ổ đĩa cứng hay ổ đĩa quang.</li>
 <li>Chuẩn IDE thực hiện phương thức truyền tải dữ liệu song song. Tốc độ truyền tải dữ liệu hiện hành đối với chuẩn parallel IDE là 133 MB/s (ATA/133).</li>
 </ul>
+
 #### 2. Chuẩn SATA
+
 <ul>
 <li>Chuẩn SATA (Serial Avanced Technology Attachment), hay đơn giản được gọi là SATA – là một chuẩn ổ đĩa cứng được tạo nhằm mục đích thay thế cho giao diện IDE, cho phép truyền tải theo chế độ nối tiếp.</li>
 Các thông số theo version của chuẩn SATA
